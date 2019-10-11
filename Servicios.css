@@ -1,0 +1,223 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://cdn.glitch.com/e3f93e2a-0dfa-4007-91d1-52c2d619d148%2Fespacio5.jpg?v=1570825587541); 
+    background-size: 100% 100%;
+    background-attachment: fixed; 
+  
+}
+footer{
+  width:100% ;
+  background: #202020;
+  color: white;
+  
+  
+}
+
+.container-footer{
+  width:100%;
+  color: gray;
+  display:flex;
+  padding:10px;
+  justify-content: space-between;
+}
+.copyright{
+  color: gray;
+}
+.information a{
+  text-decoration: none;
+  color: gray;
+}
+
+@media screen and (max-width: 1100px){
+  
+  .Container-body{
+    flex-wrap: wrap;
+  } 
+  .colum2 .colum3{
+    margin-top:40px;
+  }
+  
+}
+
+
+    
+    h4{
+        color: #1E115C;
+        text-align: bold;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+        font-family: 'Montserrat', sans-serif;
+        background: #1E115C;
+    }
+    
+    
+    .logo{
+        color: beige;
+        text-transform:uppercase;
+        letter-spacing: 5px;
+        font-size: 20px;
+    
+    }
+    .logo1{
+        color: white;
+        text-transform: capitalize;
+        letter-spacing: 5px
+
+    }
+    
+    .nav-links{
+        display: flex;
+        justify-content: space-around;
+        width: 35%;
+    
+    }
+    
+    .nav-links a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .nav-links li{
+        display: inline-block;
+        list-style: none;
+        padding: 10px 30px;
+    }
+    .nav-links li:hover{
+        background:#1E115C;
+    }
+    
+    .MyList{
+       display: none; 
+       cursor: pointer;
+    }
+    
+    .MyList div{
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+    }
+    
+    .sevlabel{
+        background: rgba(241, 241, 241, 0.808);
+        color: black;
+        width: 50%;
+        font-size: 25px; 
+        text-align: center;
+        border: 1px solid gray;
+        margin:  5px 5px;
+        padding: 5px 5px;
+        border-radius: 20px;
+        transform:  translate(50%,15%);
+
+    }
+
+    .columna{
+        background: rgba(241, 241, 241, 0.808);
+        color: #1E115C;
+        width: 50%;
+        font-size: 23px; 
+        text-align: center;
+        border: 1px solid gray;
+    margin:  40px 40px;
+    padding: 10px 10px;
+    border-radius: 20px;
+      box-sizing: border-box;
+  box-shadow: 0 0 20px #000000b1;
+  
+  
+        
+      
+        }
+        
+        .principal{
+            display: flex;
+            justify-content: space-around;
+        
+        }
+    .contenedor{
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    #slider {
+        width: 2000px;
+        height: 220px;
+        background-image: url(https://cdn.glitch.com/e3f93e2a-0dfa-4007-91d1-52c2d619d148%2Fsliderall.png?v=1570823998650);
+        background-size: 100% 100%;
+        animation: slider 10s infinite linear;
+
+    
+    }
+    @keyframes slider{
+        to{
+            background-position: 2000px;
+        }
+    }
+    
+    
+    @media screen and (max-width:1024px){
+       
+        .nav-links{
+            width: 60%;
+        }
+    
+    }
+    @media screen and (max-width:600px){
+    
+    body{
+        overflow: hidden;
+    }
+    .columna{width: 100%;
+      font-size: 18px;
+      }
+        .nav-links{
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top: 8vh;
+            background: #28E2BC;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+    
+        }
+    
+        .nav-links li{
+            opacity: 0;
+            padding: 10px 30px;
+        }
+    
+       .MyList{
+           display: block;
+       }
+    
+       .nav-active{
+           transform: translateX(0%);
+       }
+    
+       @keyframes navLinkFade {
+           from{
+               opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+       }
+    
+    }
+    
